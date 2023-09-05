@@ -1,0 +1,28 @@
+
+@font-face {
+    font-family: BigCaslon;
+    src: url("/css/fonts/BigCaslon.ttf");
+    font-display: swap;
+    font-weight: normal;
+}
+@font-face {
+    font-family: Lato-B;
+    src: url("/css/fonts/Lato\ Bold.ttf");
+    font-display: swap;
+    font-weight: normal;
+}
+@font-face {
+    font-family: Lato-R;
+    src: url("/css/fonts/Lato\ Semibold.ttf");
+    font-display: swap;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url("/css/fonts/Lato\ Medium.ttf");
+    font-display: swap;
+    font-weight: normal;
+}
+
+

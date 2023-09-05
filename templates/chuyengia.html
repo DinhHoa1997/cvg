@@ -1,0 +1,956 @@
+<!doctype html>
+<html lang="vi" xmlns="http://www.w3.org/1999/xhtml"  xml:lang="vi">
+
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Page-name</title>
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
+        <meta name="theme-color" content="#0099ff" />
+
+        <meta http-equiv="Content-Language" content="VN" />
+        <meta name="description" content="Page-name" />
+        <meta name="keywords" content="" />
+        <meta property="og:url" name="og:url" content="" data-app/>
+        <meta property="og:type" name="og:type" content="website" data-app/>
+        <meta property="og:description" name="og:description" content="Page-name" data-app/>
+        <meta property="og:title" name="og:title" content="Page-name" data-app/>
+
+        <meta property="og:image" name="og:image" content="/uploaded/logo/logo.png" data-app>
+        <meta property="og:image:alt" name="og:image:alt" content="/uploaded/logo/logo.png" data-app>
+        <link href="/favicon.ico" rel="shortcut icon" />        
+
+     
+        <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+        <link rel="stylesheet" type="text/css" href="/css/grid.css" />
+        <link rel="stylesheet" type="text/css" href="/css/responsive.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css" />
+       
+       
+       
+        <link rel="stylesheet" type="text/css" href="/css/font.css" />
+     
+        
+        <link rel="stylesheet" type="text/css" href="/css/fontawesome-5.12.1/css/all.min.css" />
+        <link rel="stylesheet" type="text/css" href="/css/jquery.mmenu.all.css" />
+        <link rel="stylesheet" href="/css/jquery-ui.css" />
+
+        <link rel="stylesheet" href="/css/jquery.fancybox.css" />
+        <link rel="stylesheet" href="/css/hover.css" />
+        <script src="/js/jquery-1.10.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
+
+        
+
+        
+
+    </head>    
+
+
+<body>
+
+
+
+<div id="page">
+
+
+    <!-- header pc -->
+    <header class="header hide-on-pad hide-on-tab">
+      <div class="grid">
+        
+        <div class="flex-container align-center">
+            <div class="cell-1-10">
+              <div class="logo">
+                <a href="/">
+                  <img src="/uploaded/logo/logo.png" alt="LogoSite"
+                    style="max-width:100%;"></a>
+                </div>
+            </div>
+           <div class="cell-5-12">
+              <div class="menubar-left">
+                <div class="menubar">
+                  <ul class="nav  hide-on-mobile">
+                   
+                      <li class=" ">
+                        <a href="/" class="">
+                              <span style="background-image:url()"> Giới thiệu <i class="far fa-angle-down"></i></span>
+                                </a>
+                          <ul class="submnu1" style="display: none;">
+                            <li class="">
+                              <a href="/phat-trien-dien-nang/">Về chúng tôi </a>
+                            </li>
+                            <li class="">
+                              <a href="/dau-tu-bat-dong-san/">Lịch sử hình thành</a>
+                            </li>
+                        </ul>
+                      </li>
+                      <li class=" ">
+                        <a href="/" class=""><span style="background-image:url()"> Dịch vụ   <i class="far fa-angle-down"></i> </span> </a> 
+                      </li>
+                      <li class=" ">
+                      <a href="/" class=""><span style="background-image:url()"> Quyền lợi học viên <i class="far fa-angle-down"></i> </span> </a>
+                      </li>
+                      <li class=" ">
+                        <a href="/" class=""><span style="background-image:url()"> Khác <i class="far fa-angle-down"></i> </span> </a>
+                      </li>
+                      
+                  </ul>
+                 
+                </div>
+              </div>
+          </div>
+          <div class="cell-5-12">
+              <div class="menubar-right">
+                <div class="menubar">
+                  <ul class="nav  hide-on-mobile">
+                   
+                      <li class=" ">
+                        <a href="/" class="">
+                              <span style="background-image:url()">Hệ sinh thái <i class="far fa-angle-down"></i></span>
+                                </a>
+                          <ul class="submnu1" style="display: none;">
+                            <li class="">
+                              <a href="/phat-trien-dien-nang/">Về chúng tôi <i class="far fa-angle-down"></i></a>
+                            </li>
+                            <li class="">
+                              <a href="/dau-tu-bat-dong-san/">Lịch sử hình thành <i class="far fa-angle-down"></i></a>
+                            </li>
+                        </ul>
+                      </li>
+                      <li class=" ">
+                        <a href="/" class=""><span style="background-image:url()"> Fanpage    <i class="far fa-angle-down"></i></span> </a>
+                      </li>
+                      <li class=" ">
+                      <a href="/" class=""><span style="background-image:url()"> Học online miễn phí <i class="far fa-angle-down"></i> </span> </a>
+                      </li>                 
+                  </ul>
+                  <div class="icon-search">
+                    <i class="fa fa-search search-icon" aria-hidden="true"></i> 
+                    <div class="search-pc" style="display: none;">
+                        <form action="/search/" method="get" id="searchformtab">
+                            <input name="qr" id="qr_search" class="kw-mobile" placeholder="Tìm kiếm" type="text">
+                                <a href="#" class="closeX" onclick="$('.search-pc').hide(); return false;">✕</a>        
+                        </form>
+                    </div>
+                    <script type="text/javascript">
+  
+                        $(".submit-search-pc").click(function () {
+                            if ($("#qr_search").val() != "")
+                                $('#searchformtab').submit();
+                            return false;
+  
+                        });
+  
+                        $(document).ready(function () {
+                            $(".search-icon").click(function () {
+                                $(".search-pc").stop().slideToggle("fast");
+                                return false;
+                            });
+                        });
+                    </script>  	
+                    <div class="c"></div>
+                </div>
+                </div>
+             
+              </div>
+              <div class="menu-top">
+                  <ul>
+                    <li><a href="#">Danh sách chuyên gia </a></li>
+                    <li><a href="#">Cảm nhận học viên</a></li>
+                    <li><a href="#">Tuyển dụng </a></li>
+                    <li><a href="#">Liên hệ </a></li>
+                  </ul>
+              </div>
+          
+              </div>
+          </div>
+        </div>
+      <div class="c"></div>
+    </header>
+    <!-- end header pc -->
+    <header class="header hide-on-pc error">
+      <div class="mobile-bar hide-on-pc">
+        <div class="grid">
+            <div class="flex-container align-center">
+                <div class="cell-1-3">
+                   
+                    <a class="menu-mobile" href="#menu">
+                      <i class="fas fa-bars"></i>
+                   </a>
+                   
+                </div>
+                <div class="cell-1-3">
+                 
+                  <div class="logo">
+                      <a href="/">
+                        <img src="/uploaded/logo/Logo_full 1.png" alt="Logo web" style="max-width: 100%; margin: 0 auto" />
+                      </a>
+                  </div>
+                 
+              </div>
+            
+                <div class="icon-search search-mb" >
+                  <i class="fa fa-search search-iconmb" aria-hidden="true"></i>
+                    <div class="frm-search-mb" style="">
+                     <form action="/search/" method="get" id="searchformtab">
+                        <input name="qr" class="kw-mobile" placeholder="Tìm kiếm " type="text">
+                        <a href="#" class="submit-search-pc" onClick="$('#searchformtab').submit(); return false;"> 
+                          <i class="fa fa-search" aria-hidden="true"></i> </a>
+  
+                        <a href="#" class="closeX" onClick="$('.frm-search-mb').hide(); return false;">&#10005;</a>        
+                      </form>
+                    </div> 
+                    
+                    <script>
+                      $(document).ready(function () {
+                      $(".search-iconmb").click(function () {
+                        $(".frm-search-mb").stop().slideToggle("fast");
+                        return false;
+                      });
+                      });
+                    </script>  	
+                   </div>
+               
+            </div>
+            </div>
+        </div>
+        <div class="c"></div>
+      
+    </header>
+    <!-- content -->
+    <div class="content">
+      
+      <!-- slideshow -->
+    
+      
+        <div class="crumb">
+            <div class="grid">
+                <a href="/"> <i class="fa fa-home" aria-hidden="true"></i> </a> <i class="fa fa-angle-right"></i> 
+                <a href="#">Giới thiệu</a>&nbsp;
+            
+            </div>
+        </div>
+        <div class="teaccherinfo-wrapper">
+            <div class="c30"></div>
+            <div class="c20 hide-on-mobile"></div>
+              <div class="grid">
+                <div class="homecat-title text-center">
+                Danh sách chuyên gia 1
+                </div>
+            
+                <div class="homecat-intro text-center">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod temp incididunt ut labore et dolore...
+                </div>
+                <div class="c30"></div>
+              
+            <div class="flex-container">
+                <div class="cell-1-3 tab-cell-1-1">
+
+                    <div class="hometeacher-item">
+                        <a data-fancybox data-src="#open1" href="javascript:" class="img-shine">
+                        <img style="width: 100%; object-fit: cover; height: 280px;" src="/uploaded/user/item1.png" alt="">
+                        </a>
+                        
+                        <div class="hometeacher-content">
+                        <div class="hometeacher-name">
+                            <a href="javascript:" data-fancybox data-src="#open1"> GV.Trần Nam Anh</a>
+                        </div>
+                        <div class="c5"></div>
+                        <div class="hometeacher-intro text-line-8">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod temp incididunt ut labore et dolore Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eius consectetuit amet, consectetur adipiscing elit sed do eius consectetuit amet, consectetur adipiscing elit sed do eius consectetur adipis consectetur adipiscing elit sed do eius consectetumod temp incididunt ut labore et dolore...
+                        </div>
+                        <div class="c10"></div>
+                        <a href="#" data-fancybox data-src="#open1"  class="btn-detail"  data-fancybox data-src="#open21"> Xem chi tiết  <i class="fas fa-long-arrow-alt-right"></i></a>
+                
+                        </div>    
+                    </div> 
+                    <div class="hidden">
+                        <div class="grid">
+                            <div class="open" id="open1">
+                                <div class="teacher-content">
+                                    <div class="flex-container">
+                                        <div class="cell-1-2 tab-cell-1-1">
+                                        <img src="/uploaded/user/item1.png" width="100%" alt="">
+                                        </div>
+                                        <div class="cell-1-2 tab-cell-1-1">
+                                            <div class="teacher-name">
+                                                GV.Trần Nam Anh
+                                            </div>
+                                            <div class="c10"></div>
+                                            <div class="position">
+                                                CEO CVG Buôn Ma Thuột
+                                            </div>
+                                            <ul> 
+                                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod temp incididunt ut labore et dolore. </li>
+                                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod temp incididunt ut labore et dolore. </li>
+                                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod temp incididunt ut labore et dolore. </li>
+                                            </ul>
+                                            <p style="text-align: justify;">
+                                              At ad quisquam pariatur dicta quaerat?
+                                            </p>
+                                            <p style="text-align: justify;">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur rerum sed hic? Distinctio repellendus, inventore at voluptates nam harum necessitatibus. Distinctio, ea rerum facilis blanditiis incidunt error voluptates? Inventore, aperiam.
+                                           </p>
+                                            <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, ut quibusdam fuga asperiores maiores illum officiis possimus dolorum, exercitationem laudantium aliquam quam. Similique corrupti omnis exercitationem cumque, eveniet molestias cum.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+               
+                <div class="cell-1-3 tab-cell-1-1">
+
+                    <div class="hometeacher-item">
+                        <a data-fancybox data-src="#open3" href="javascript:" class="img-shine">
+                        <img style="width: 100%; object-fit: cover; height: 280px;" src="/uploaded/user/item3.png" alt="">
+                        </a>
+                        
+                        <div class="hometeacher-content">
+                        <div class="hometeacher-name">
+                            <a href="javascript:" data-fancybox data-src="#open3"> GV.Trần Nam Anh</a>
+                        </div>
+                        <div class="c5"></div>
+                        <div class="hometeacher-intro text-line-8">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod temp incididunt ut labore et dolore Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eius consectetuit amet, consectetur adipiscing elit sed do eius consectetuit amet, consectetur adipiscing elit sed do eius consectetur adipis consectetur adipiscing elit sed do eius consectetumod temp incididunt ut labore et dolore...
+                        </div>
+                        <div class="c10"></div>
+                        <a href="#" data-fancybox data-src="#open3"  class="btn-detail"  data-fancybox data-src="#open21"> Xem chi tiết  <i class="fas fa-long-arrow-alt-right"></i></a>
+                
+                        </div>    
+                    </div> 
+                    <div class="hidden">
+                        <div class="grid">
+                            <div class="open" id="open3">
+                                <div class="teacher-content">
+                                    <div class="flex-container">
+                                        <div class="cell-1-2 tab-cell-1-1">
+                                        <img src="/uploaded/user/item3.png" width="100%" alt="">
+                                        </div>
+                                        <div class="cell-1-2 tab-cell-1-1">
+                                            <div class="teacher-name">
+                                                GV.Trần Nam Anh
+                                            </div>
+                                            <div class="c10"></div>
+                                            <div class="position">
+                                                CEO CVG Buôn Ma Thuột
+                                            </div>
+                                            <ul> 
+                                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod temp incididunt ut labore et dolore. </li>
+                                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod temp incididunt ut labore et dolore. </li>
+                                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod temp incididunt ut labore et dolore. </li>
+                                            </ul>
+                                            <p style="text-align: justify;">
+                                              At ad quisquam pariatur dicta quaerat?
+                                            </p>
+                                            <p style="text-align: justify;">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur rerum sed hic? Distinctio repellendus, inventore at voluptates nam harum necessitatibus. Distinctio, ea rerum facilis blanditiis incidunt error voluptates? Inventore, aperiam.
+                                           </p>
+                                            <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, ut quibusdam fuga asperiores maiores illum officiis possimus dolorum, exercitationem laudantium aliquam quam. Similique corrupti omnis exercitationem cumque, eveniet molestias cum.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+               
+                <div class="cell-1-3 tab-cell-1-1">
+
+                    <div class="hometeacher-item">
+                        <a data-fancybox data-src="#open2" href="javascript:" class="img-shine">
+                        <img style="width: 100%; object-fit: cover; height: 280px;" src="/uploaded/user/item2.png" alt="">
+                        </a>
+                        
+                        <div class="hometeacher-content">
+                        <div class="hometeacher-name">
+                            <a href="javascript:" data-fancybox data-src="#open2"> GV.Trần Nam Anh</a>
+                        </div>
+                        <div class="c5"></div>
+                        <div class="hometeacher-intro text-line-8">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod temp incididunt ut labore et dolore Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eius consectetuit amet, consectetur adipiscing elit sed do eius consectetuit amet, consectetur adipiscing elit sed do eius consectetur adipis consectetur adipiscing elit sed do eius consectetumod temp incididunt ut labore et dolore...
+                        </div>
+                        <div class="c10"></div>
+                        <a href="#" data-fancybox data-src="#open2"  class="btn-detail"  data-fancybox data-src="#open21"> Xem chi tiết  <i class="fas fa-long-arrow-alt-right"></i></a>
+                
+                        </div>    
+                    </div> 
+                    <div class="hidden">
+                        <div class="grid">
+                            <div class="open" id="open2">
+                                <div class="teacher-content">
+                                    <div class="flex-container">
+                                        <div class="cell-1-2 tab-cell-1-1">
+                                        <img src="/uploaded/user/item2.png" width="100%" alt="">
+                                        </div>
+                                        <div class="cell-1-2 tab-cell-1-1">
+                                            <div class="teacher-name">
+                                                GV.Trần Nam Anh
+                                            </div>
+                                            <div class="c10"></div>
+                                            <div class="position">
+                                                CEO CVG Buôn Ma Thuột
+                                            </div>
+                                            <ul> 
+                                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod temp incididunt ut labore et dolore. </li>
+                                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod temp incididunt ut labore et dolore. </li>
+                                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod temp incididunt ut labore et dolore. </li>
+                                            </ul>
+                                            <p style="text-align: justify;">
+                                              At ad quisquam pariatur dicta quaerat?
+                                            </p>
+                                            <p style="text-align: justify;">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur rerum sed hic? Distinctio repellendus, inventore at voluptates nam harum necessitatibus. Distinctio, ea rerum facilis blanditiis incidunt error voluptates? Inventore, aperiam.
+                                           </p>
+                                            <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, ut quibusdam fuga asperiores maiores illum officiis possimus dolorum, exercitationem laudantium aliquam quam. Similique corrupti omnis exercitationem cumque, eveniet molestias cum.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+               
+                <div class="cell-1-3 tab-cell-1-1">
+
+                    <div class="hometeacher-item">
+                        <a data-fancybox data-src="#open1" href="javascript:" class="img-shine">
+                        <img style="width: 100%; object-fit: cover; height: 280px;" src="/uploaded/user/item1.png" alt="">
+                        </a>
+                        
+                        <div class="hometeacher-content">
+                        <div class="hometeacher-name">
+                            <a href="javascript:" data-fancybox data-src="#open1"> GV.Trần Nam Anh</a>
+                        </div>
+                        <div class="c5"></div>
+                        <div class="hometeacher-intro text-line-8">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod temp incididunt ut labore et dolore Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eius consectetuit amet, consectetur adipiscing elit sed do eius consectetuit amet, consectetur adipiscing elit sed do eius consectetur adipis consectetur adipiscing elit sed do eius consectetumod temp incididunt ut labore et dolore...
+                        </div>
+                        <div class="c10"></div>
+                        <a href="#" data-fancybox data-src="#open1"  class="btn-detail"  data-fancybox data-src="#open21"> Xem chi tiết  <i class="fas fa-long-arrow-alt-right"></i></a>
+                
+                        </div>    
+                    </div> 
+                    <div class="hidden">
+                        <div class="grid">
+                            <div class="open" id="open1">
+                                <div class="teacher-content">
+                                    <div class="flex-container">
+                                        <div class="cell-1-2 tab-cell-1-1">
+                                        <img src="/uploaded/user/item1.png" width="100%" alt="">
+                                        </div>
+                                        <div class="cell-1-2 tab-cell-1-1">
+                                            <div class="teacher-name">
+                                                GV.Trần Nam Anh
+                                            </div>
+                                            <div class="c10"></div>
+                                            <div class="position">
+                                                CEO CVG Buôn Ma Thuột
+                                            </div>
+                                            <ul> 
+                                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod temp incididunt ut labore et dolore. </li>
+                                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod temp incididunt ut labore et dolore. </li>
+                                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod temp incididunt ut labore et dolore. </li>
+                                            </ul>
+                                            <p style="text-align: justify;">
+                                              At ad quisquam pariatur dicta quaerat?
+                                            </p>
+                                            <p style="text-align: justify;">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur rerum sed hic? Distinctio repellendus, inventore at voluptates nam harum necessitatibus. Distinctio, ea rerum facilis blanditiis incidunt error voluptates? Inventore, aperiam.
+                                           </p>
+                                            <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, ut quibusdam fuga asperiores maiores illum officiis possimus dolorum, exercitationem laudantium aliquam quam. Similique corrupti omnis exercitationem cumque, eveniet molestias cum.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+               
+                <div class="cell-1-3 tab-cell-1-1">
+
+                    <div class="hometeacher-item">
+                        <a data-fancybox data-src="#open3" href="javascript:" class="img-shine">
+                        <img style="width: 100%; object-fit: cover; height: 280px;" src="/uploaded/user/item3.png" alt="">
+                        </a>
+                        
+                        <div class="hometeacher-content">
+                        <div class="hometeacher-name">
+                            <a href="javascript:" data-fancybox data-src="#open3"> GV.Trần Nam Anh</a>
+                        </div>
+                        <div class="c5"></div>
+                        <div class="hometeacher-intro text-line-8">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod temp incididunt ut labore et dolore Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eius consectetuit amet, consectetur adipiscing elit sed do eius consectetuit amet, consectetur adipiscing elit sed do eius consectetur adipis consectetur adipiscing elit sed do eius consectetumod temp incididunt ut labore et dolore...
+                        </div>
+                        <div class="c10"></div>
+                        <a href="#" data-fancybox data-src="#open3"  class="btn-detail"  data-fancybox data-src="#open21"> Xem chi tiết  <i class="fas fa-long-arrow-alt-right"></i></a>
+                
+                        </div>    
+                    </div> 
+                    <div class="hidden">
+                        <div class="grid">
+                            <div class="open" id="open3">
+                                <div class="teacher-content">
+                                    <div class="flex-container">
+                                        <div class="cell-1-2 tab-cell-1-1">
+                                        <img src="/uploaded/user/item3.png" width="100%" alt="">
+                                        </div>
+                                        <div class="cell-1-2 tab-cell-1-1">
+                                            <div class="teacher-name">
+                                                GV.Trần Nam Anh
+                                            </div>
+                                            <div class="c10"></div>
+                                            <div class="position">
+                                                CEO CVG Buôn Ma Thuột
+                                            </div>
+                                            <ul> 
+                                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod temp incididunt ut labore et dolore. </li>
+                                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod temp incididunt ut labore et dolore. </li>
+                                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod temp incididunt ut labore et dolore. </li>
+                                            </ul>
+                                            <p style="text-align: justify;">
+                                              At ad quisquam pariatur dicta quaerat?
+                                            </p>
+                                            <p style="text-align: justify;">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur rerum sed hic? Distinctio repellendus, inventore at voluptates nam harum necessitatibus. Distinctio, ea rerum facilis blanditiis incidunt error voluptates? Inventore, aperiam.
+                                           </p>
+                                            <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, ut quibusdam fuga asperiores maiores illum officiis possimus dolorum, exercitationem laudantium aliquam quam. Similique corrupti omnis exercitationem cumque, eveniet molestias cum.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+               
+                <div class="cell-1-3 tab-cell-1-1">
+
+                    <div class="hometeacher-item">
+                        <a data-fancybox data-src="#open2" href="javascript:" class="img-shine">
+                        <img style="width: 100%; object-fit: cover; height: 280px;" src="/uploaded/user/item2.png" alt="">
+                        </a>
+                        
+                        <div class="hometeacher-content">
+                        <div class="hometeacher-name">
+                            <a href="javascript:" data-fancybox data-src="#open2"> GV.Trần Nam Anh</a>
+                        </div>
+                        <div class="c5"></div>
+                        <div class="hometeacher-intro text-line-8">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod temp incididunt ut labore et dolore Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eius consectetuit amet, consectetur adipiscing elit sed do eius consectetuit amet, consectetur adipiscing elit sed do eius consectetur adipis consectetur adipiscing elit sed do eius consectetumod temp incididunt ut labore et dolore...
+                        </div>
+                        <div class="c10"></div>
+                        <a href="#" data-fancybox data-src="#open2"  class="btn-detail"  data-fancybox data-src="#open21"> Xem chi tiết  <i class="fas fa-long-arrow-alt-right"></i></a>
+                
+                        </div>    
+                    </div> 
+                    <div class="hidden">
+                        <div class="grid">
+                            <div class="open" id="open2">
+                                <div class="teacher-content">
+                                    <div class="flex-container">
+                                        <div class="cell-1-2 tab-cell-1-1">
+                                        <img src="/uploaded/user/item2.png" width="100%" alt="">
+                                        </div>
+                                        <div class="cell-1-2 tab-cell-1-1">
+                                            <div class="teacher-name">
+                                                GV.Trần Nam Anh
+                                            </div>
+                                            <div class="c10"></div>
+                                            <div class="position">
+                                                CEO CVG Buôn Ma Thuột
+                                            </div>
+                                            <ul> 
+                                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod temp incididunt ut labore et dolore. </li>
+                                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod temp incididunt ut labore et dolore. </li>
+                                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod temp incididunt ut labore et dolore. </li>
+                                            </ul>
+                                            <p style="text-align: justify;">
+                                              At ad quisquam pariatur dicta quaerat?
+                                            </p>
+                                            <p style="text-align: justify;">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur rerum sed hic? Distinctio repellendus, inventore at voluptates nam harum necessitatibus. Distinctio, ea rerum facilis blanditiis incidunt error voluptates? Inventore, aperiam.
+                                           </p>
+                                            <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, ut quibusdam fuga asperiores maiores illum officiis possimus dolorum, exercitationem laudantium aliquam quam. Similique corrupti omnis exercitationem cumque, eveniet molestias cum.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+               
+                <div class="cell-1-3 tab-cell-1-1">
+
+                    <div class="hometeacher-item">
+                        <a data-fancybox data-src="#open1" href="javascript:" class="img-shine">
+                        <img style="width: 100%; object-fit: cover; height: 280px;" src="/uploaded/user/item1.png" alt="">
+                        </a>
+                        
+                        <div class="hometeacher-content">
+                        <div class="hometeacher-name">
+                            <a href="javascript:" data-fancybox data-src="#open1"> GV.Trần Nam Anh</a>
+                        </div>
+                        <div class="c5"></div>
+                        <div class="hometeacher-intro text-line-8">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod temp incididunt ut labore et dolore Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eius consectetuit amet, consectetur adipiscing elit sed do eius consectetuit amet, consectetur adipiscing elit sed do eius consectetur adipis consectetur adipiscing elit sed do eius consectetumod temp incididunt ut labore et dolore...
+                        </div>
+                        <div class="c10"></div>
+                        <a href="#" data-fancybox data-src="#open1"  class="btn-detail"  data-fancybox data-src="#open21"> Xem chi tiết  <i class="fas fa-long-arrow-alt-right"></i></a>
+                
+                        </div>    
+                    </div> 
+                    <div class="hidden">
+                        <div class="grid">
+                            <div class="open" id="open1">
+                                <div class="teacher-content">
+                                    <div class="flex-container">
+                                        <div class="cell-1-2 tab-cell-1-1">
+                                        <img src="/uploaded/user/item1.png" width="100%" alt="">
+                                        </div>
+                                        <div class="cell-1-2 tab-cell-1-1">
+                                            <div class="teacher-name">
+                                                GV.Trần Nam Anh
+                                            </div>
+                                            <div class="c10"></div>
+                                            <div class="position">
+                                                CEO CVG Buôn Ma Thuột
+                                            </div>
+                                            <ul> 
+                                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod temp incididunt ut labore et dolore. </li>
+                                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod temp incididunt ut labore et dolore. </li>
+                                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod temp incididunt ut labore et dolore. </li>
+                                            </ul>
+                                            <p style="text-align: justify;">
+                                              At ad quisquam pariatur dicta quaerat?
+                                            </p>
+                                            <p style="text-align: justify;">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur rerum sed hic? Distinctio repellendus, inventore at voluptates nam harum necessitatibus. Distinctio, ea rerum facilis blanditiis incidunt error voluptates? Inventore, aperiam.
+                                           </p>
+                                            <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, ut quibusdam fuga asperiores maiores illum officiis possimus dolorum, exercitationem laudantium aliquam quam. Similique corrupti omnis exercitationem cumque, eveniet molestias cum.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+               
+                <div class="cell-1-3 tab-cell-1-1">
+
+                    <div class="hometeacher-item">
+                        <a data-fancybox data-src="#open3" href="javascript:" class="img-shine">
+                        <img style="width: 100%; object-fit: cover; height: 280px;" src="/uploaded/user/item3.png" alt="">
+                        </a>
+                        
+                        <div class="hometeacher-content">
+                        <div class="hometeacher-name">
+                            <a href="javascript:" data-fancybox data-src="#open3"> GV.Trần Nam Anh</a>
+                        </div>
+                        <div class="c5"></div>
+                        <div class="hometeacher-intro text-line-8">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod temp incididunt ut labore et dolore Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eius consectetuit amet, consectetur adipiscing elit sed do eius consectetuit amet, consectetur adipiscing elit sed do eius consectetur adipis consectetur adipiscing elit sed do eius consectetumod temp incididunt ut labore et dolore...
+                        </div>
+                        <div class="c10"></div>
+                        <a href="#" data-fancybox data-src="#open3"  class="btn-detail"  data-fancybox data-src="#open21"> Xem chi tiết  <i class="fas fa-long-arrow-alt-right"></i></a>
+                
+                        </div>    
+                    </div> 
+                    <div class="hidden">
+                        <div class="grid">
+                            <div class="open" id="open3">
+                                <div class="teacher-content">
+                                    <div class="flex-container">
+                                        <div class="cell-1-2 tab-cell-1-1">
+                                        <img src="/uploaded/user/item3.png" width="100%" alt="">
+                                        </div>
+                                        <div class="cell-1-2 tab-cell-1-1">
+                                            <div class="teacher-name">
+                                                GV.Trần Nam Anh
+                                            </div>
+                                            <div class="c10"></div>
+                                            <div class="position">
+                                                CEO CVG Buôn Ma Thuột
+                                            </div>
+                                            <ul> 
+                                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod temp incididunt ut labore et dolore. </li>
+                                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod temp incididunt ut labore et dolore. </li>
+                                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod temp incididunt ut labore et dolore. </li>
+                                            </ul>
+                                            <p style="text-align: justify;">
+                                              At ad quisquam pariatur dicta quaerat?
+                                            </p>
+                                            <p style="text-align: justify;">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur rerum sed hic? Distinctio repellendus, inventore at voluptates nam harum necessitatibus. Distinctio, ea rerum facilis blanditiis incidunt error voluptates? Inventore, aperiam.
+                                           </p>
+                                            <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, ut quibusdam fuga asperiores maiores illum officiis possimus dolorum, exercitationem laudantium aliquam quam. Similique corrupti omnis exercitationem cumque, eveniet molestias cum.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+               
+                <div class="cell-1-3 tab-cell-1-1">
+
+                    <div class="hometeacher-item">
+                        <a data-fancybox data-src="#open2" href="javascript:" class="img-shine">
+                        <img style="width: 100%; object-fit: cover; height: 280px;" src="/uploaded/user/item2.png" alt="">
+                        </a>
+                        
+                        <div class="hometeacher-content">
+                        <div class="hometeacher-name">
+                            <a href="javascript:" data-fancybox data-src="#open2"> GV.Trần Nam Anh</a>
+                        </div>
+                        <div class="c5"></div>
+                        <div class="hometeacher-intro text-line-8">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod temp incididunt ut labore et dolore Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eius consectetuit amet, consectetur adipiscing elit sed do eius consectetuit amet, consectetur adipiscing elit sed do eius consectetur adipis consectetur adipiscing elit sed do eius consectetumod temp incididunt ut labore et dolore...
+                        </div>
+                        <div class="c10"></div>
+                        <a href="#" data-fancybox data-src="#open2"  class="btn-detail"  data-fancybox data-src="#open21"> Xem chi tiết  <i class="fas fa-long-arrow-alt-right"></i></a>
+                
+                        </div>    
+                    </div> 
+                    <div class="hidden">
+                        <div class="grid">
+                            <div class="open" id="open2">
+                                <div class="teacher-content">
+                                    <div class="flex-container">
+                                        <div class="cell-1-2 tab-cell-1-1">
+                                        <img src="/uploaded/user/item2.png" width="100%" alt="">
+                                        </div>
+                                        <div class="cell-1-2 tab-cell-1-1">
+                                            <div class="teacher-name">
+                                                GV.Trần Nam Anh
+                                            </div>
+                                            <div class="c10"></div>
+                                            <div class="position">
+                                                CEO CVG Buôn Ma Thuột
+                                            </div>
+                                            <ul> 
+                                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod temp incididunt ut labore et dolore. </li>
+                                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod temp incididunt ut labore et dolore. </li>
+                                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod temp incididunt ut labore et dolore. </li>
+                                            </ul>
+                                            <p style="text-align: justify;">
+                                              At ad quisquam pariatur dicta quaerat?
+                                            </p>
+                                            <p style="text-align: justify;">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur rerum sed hic? Distinctio repellendus, inventore at voluptates nam harum necessitatibus. Distinctio, ea rerum facilis blanditiis incidunt error voluptates? Inventore, aperiam.
+                                           </p>
+                                            <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, ut quibusdam fuga asperiores maiores illum officiis possimus dolorum, exercitationem laudantium aliquam quam. Similique corrupti omnis exercitationem cumque, eveniet molestias cum.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+               
+                
+            </div>
+            <div class="paging1 pagination "><a href="/cam-nang/page-1/" class="page disabled"><span><strong> <i class="fa fa-angle-double-left pagination-item-icon"></i>  </strong></span></a><a href="/cam-nang/page-1/" class="page disabled"><span><strong> <i class="fa fa-angle-left pagination-item-icon"></i> </strong></span></a><a class="clicked pagination-item__clicked">&nbsp;<span>1</span>&nbsp;</a><a href="/cam-nang/page-2/" class="page pagination-item">&nbsp;<span>2</span>&nbsp;</a><a href="/cam-nang/page-3/" class="page pagination-item">&nbsp;<span>3</span>&nbsp;</a><a href="/cam-nang/page-4/" class="page pagination-item">&nbsp;<span>4</span>&nbsp;</a> <a href="/cam-nang/page-4/" class="page "><span><strong> <i class="fa fa-angle-right pagination-item-icon"></i> </strong></span></a> <a href="/cam-nang/page-4/" class="page "><span><strong>  <i class="fa fa-angle-double-right pagination-item-icon"></i> </strong></span></a></div>
+
+            <div class="c20 hide-on-mobile"></div>
+            <div class="c30"></div>
+            <div class="c20 hide-on-mobile"></div>
+        </div>
+        </div>
+
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+     <div class="c30"></div>
+      <div class="footer-main">
+        <div class="grid">
+          <div class="flex-container">
+              <div class="cell-7-10 tab-cell-1-1">
+                <div class="cell-4-10 tab-cell-1-1">
+                  <div class="footer-block">
+                    <div class="footer-title footer-title-mobile" rel="ct">
+                      Thông tin liên hệ
+                   </div>
+                   <div class="info">
+                    <img src="/uploaded/ico/maps.svg" alt=""> Biệt thự Hải  u 05,01, Khu đô hị Vinhome
+                    Ocean Park, Xã Đa Tốn, Huyện Gia Lâm
+                   </div>
+                   <div class="info">
+                    <img src="/uploaded/ico/phone.svg" alt="">0221 3989 826/8
+                   </div>
+                   <div class="info">
+                    <img src="/uploaded/ico/email.svg" alt=""> cvgbuonmathuot@gmail.com
+                   </div>
+                   <div class="info">
+                    <img src="/uploaded/ico/website.svg" alt=""> cvgbuonmathuot@gmail.com
+                   </div>
+                  </div>
+                </div>
+                <div class="cell-3-10 tab-cell-1-1">
+                  <div class="footer-block">
+                    <div class="footer-title footer-title-mobile" rel="ct">
+                      Hệ sinh thái của chúng tôi
+                   </div>
+                   <ul class="menuboxfooter" id="boxcol5">
+                    <li><a href="/gioi-thieu-chung/"> Giới thiệu chung</a></li>
+                    <li><a href="/tam-nhin-chien-luoc/"> Tầm nhìn chiến lược </a></li>
+                    <li><a href="/gia-tri-cot-loi/"> Giá trị cốt lõi</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="cell-3-10 tab-cell-1-1">
+                  <div class="footer-block">
+                    <div class="footer-title footer-title-mobile" rel="ct">
+                      Công ty của chúng tôi
+                   </div>
+                   <ul class="menuboxfooter" id="boxcol5">
+                    <li><a href="/gioi-thieu-chung/"> Sứ mệnh</a></li>
+                    <li><a href="/tam-nhin-chien-luoc/"> Tầm nhìn </a></li>
+                    <li><a href="/gia-tri-cot-loi/"> Giá trị cốt lõi</a></li>
+                    <li><a href="/gia-tri-cot-loi/">Triết lý vận hành</a></li>
+                    </ul>
+                  </div>
+                </div>
+               <div class="cell-1-1">
+                  <div class="c30"></div>
+                  <div class="flex-container">
+                    <div class="cell-4-10">
+                 
+                      <div class="google-maps">
+                       <a href="#"> <img style="" src="/uploaded/ico/maps.png" alt=""> Bản đồ chỉ đường</a>
+                      </div>
+                     
+                    </div>
+                    <div class="cell-6-10">
+                        <div class="flex-container flex-start align-center ">
+                        <b> Kết nối với chúng tôi: </b> 
+                        <ul class="footer-social">
+                  
+                        <li class="facebook  hvr-float">
+                          <a href="https://www.facebook.com/hocbongvnu" class="footer-social__item">
+                            <i class="fab fa-facebook-f"></i>
+                          </a>
+                        </li>
+                        <li class="youtube  hvr-float">
+                          <a href="#" class="footer-social__item">
+                            <i class="fab fa-youtube"></i>
+                          </a>
+                        </li>
+                        
+                        <li class="tiktok  hvr-float">
+                          <a href="" class="footer-social__item">
+                            <i class="fab fa-tiktok"></i>
+                          </a>
+                        </li>
+                        
+                      </ul>
+                        </div>
+                      
+                    </div>
+                  </div>
+               </div>
+              </div>
+              <div class="cell-3-10 tab-cell-1-1">
+                  <div class="footer-block">  
+                      <div class="footer-title text-center">
+                          Đăng ký học với CVG
+                      </div>
+                      <div class="c5"></div>
+                      <div class="booking-wrapper">
+                        <form action="/index4.php?page=contact&amp;lang=" method="post" class="frmSubmit" id="regform2" data-alert="Bạn cần nhập đủ thông tin vào những trường màu đỏ" data-captcha="Mã captcha không đúng" data-success="Thông tin liên hệ đã được gửi thành công !" data-redirect="/contact-success/">
+                            <input type="hidden" name="code" value="save">     
+    
+                            <div class="form_contact">
+                                <div class="c20"></div>
+    
+                                <div class="flex-container">
+                                    <div class="cell-1-1 tab-cell-1-1">
+                                      
+                                        <input name="yourname" type="text" placeholder="Họ và tên" class="txt-contact notNull">
+                                    </div> 
+                                    <div class="cell-1-2 tab-cell-1-1">
+                                        
+                                        <input name="phone" type="text" placeholder="Điện thoại" class="txt-contact notNull">
+                                    </div>
+                                    <div class="cell-1-2 tab-cell-1-1">
+                                       
+                                        <input name="email" type="text" placeholder="Email" class="txt-contact">
+                                    </div>
+    
+                                    <div class="cell-1-1 tab-cell-1-1">
+                                     
+                                     <div class="cell-1-1 tab-cell-1-1">
+                                      <select class="notNull" name="dichvu">
+                                        <option value="">Khóa học quan tâm</option>
+                                        <option value="abc">Khóa học cho lãnh đạo cấp cao</option>
+                                        
+                                        
+                                      </select>
+                                    </div> 
+                                  </div> 
+                                </div>
+                                <div class="btn-contact">
+                                   
+                                    <input name="input" type="button" onclick="$('#regform2').submit()" class="" value="Gửi liên hệ">
+                                </div>
+    
+                            </div>
+    
+                        </form>
+    
+    
+    
+                        </div>
+                  </div>
+              </div>
+             
+          </div>
+      
+      
+           
+        </div>
+      </div>
+      <div class="c30"></div>
+      <div class="footer-copyright">
+        <div class="grid">
+          © Bản quyền thuộc về pasiinterni.com. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+</div>
+
+
+  <script src="/js/jquery.fancybox.js"></script>
+ 
+  
+  <script src="/js/script.js"></script>
+
+  <script src="/js/jquery-ui.min.js"></script>
+  <script src="/js/jquery.form.min.js"></script>
+  <script src="/js/jquery.mmenu.min.all.js"></script>
+
+  
+</body>
+
+</html>
